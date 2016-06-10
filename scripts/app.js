@@ -840,7 +840,7 @@
                                 let params = 'regId='+splittedEndpoint[splittedEndpoint.length-1]+'&userAgent='+encodeURIComponent(navigator.userAgent);
                                 app.ajaxService.fetch('GET', app.apiRoute+'/register.php?'+params);
 
-                                app.notificationService.createSystemNotification("System Notifitcation", "Task Planer app ready");
+                                app.notificationService.createSystemNotification("System Notifitcation", "Task Planner app ready");
                             })
                             .catch(function(err) {
                                 console.warn('Error during push subscription', err);

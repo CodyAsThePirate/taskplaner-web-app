@@ -70,7 +70,7 @@ self.addEventListener('push', function(e){
             self.deadlineChecking().then(function(result) {
                 console.log(result);
                 if (result.hasDeadlineAlerts) {
-                    self.registration.showNotification("Task Planer:", {
+                    self.registration.showNotification("Task Planner:", {
                         body: "Deadlines stehen an!",
                         icon: null,
                         tag: 'deadline-checker'

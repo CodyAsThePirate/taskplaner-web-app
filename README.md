@@ -1,11 +1,11 @@
-# Taskplaner App
+# Taskplanner App
 This web app allows you to manage tasks with awareness of deadlines and the possibility of time tracking.
 
 **NOTES:**
 - The app is an experimental prototype
 - There is no warranty for the use of the demo
 - The structure of the project could extensively change in future
-- The app was an partial result of an scientific research on who web app technologies were approximating native mobile app since 2012
+- The app was an partial result of an scientific research on who web app technologies were approximating native mobile apps since 2012
 - In future this app will serve as an experimental platform to prove new web technologies coming (excitedly waiting for periodic background sync to come)
 
 ##Features

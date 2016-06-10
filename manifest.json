@@ -1,6 +1,6 @@
 {
-    "name": "Task Planer",
-    "short_name": "TaskPlaner",
+    "name": "Task Planner",
+    "short_name": "TaskPlanner",
     "icons": [{
         "src": "images/icons/ic_assignment_black_48dp-128x128.png",
         "sizes": "128x128",
