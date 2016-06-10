@@ -5,7 +5,6 @@
         isLoading: true,
         hasRequestPending: false,
         visibleTasks: {},
-        selectedCities: [],
         spinner: document.querySelector('.loader'),
         taskTemplate: document.querySelector('.taskTemplate'),
         container: document.querySelector('.main'),
@@ -203,7 +202,7 @@
         app.sideNav.addEventListener('transitionend', onSideNavClose);
     };
 
-    // Toggles the visibility of the add new city dialog.
+    // Toggles the visibility of the new task/edit task dialog
     app.toggleAddDialog = function(visible) {
         if (visible) {
             app.addDialog.classList.add('dialog-container--visible');
@@ -863,7 +862,6 @@
                     console.log(e);
                     me.serviceWorkerRegistration.showNotification(title, { body: message, icon: icon })
                 }
-                //window.navigator.vibrate(500);
             }
         },
         toastHandler: {
@@ -888,32 +886,6 @@
     /*****************************************************************************
      * Code required to start the app
      ****************************************************************************/
-
-    // TODO dev only dump data; delete after finished
-    /*app.pubSubBroker.subscribe('taskplaner/onTaskManagerReady', function(){
-    // set up some dump data
-        for (let i = 0; i<1000; i++) {
-            app.taskManager.addNewTask(i+"Aufgabe", {
-            prio: 1,
-            deadlineMinutes: 15,
-            deadlineHour: 10,
-            deadlineDay: 27,
-            deadlineMonth: 5,
-            deadlineYear: 2016,
-            state: 2,
-            contentType: "default",
-            description: "Bescheriebung der aufgabe",
-            timeMust: 10,
-            timeHas: 0
-            });
-        }
-
-        //        app.taskManager.tasks.forEach(function(task) {
-        //            console.log("timer");
-        //            app.taskManager.toggleTimer(task.id);
-        //        });
-    });*/
-
 
     // Set up task managing
     app.taskManager.init();
